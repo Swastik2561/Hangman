@@ -1,5 +1,7 @@
 #HangMan
 import random
+import os
+
 wordsList = ["Swasta","Binajola","Manda","Janpachola"]
 count = 0
 win = 0
@@ -35,8 +37,9 @@ def checkWord(character):
 
 print "LEts PLAy HANGMAN xD\n"
 #3 tries
-count =0
+count = 0
 while count <= 3 and win != len(word):
+
     print gword
     character = raw_input("Enter the Guess\n")
     if not checkWord(character):
@@ -46,3 +49,6 @@ while count <= 3 and win != len(word):
         print "You Lose"
     elif win == len(word):
         print "You Win"
+
+raw_input("Thank You For PLaying Press Enter To Exit")
+
