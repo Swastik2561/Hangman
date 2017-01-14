@@ -1,6 +1,5 @@
 #HangMan
 import random
-import os
 
 wordsList = ["Swasta","Binajola","Manda","Janpachola"]
 count = 0
